@@ -66,9 +66,11 @@ export const Right = styled.div`
   div:nth-child(1) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    height: 50px;
 
     div:nth-child(1) {
+      border: 0;
+
       span {
         font-size: 20px;
         font-weight: 700;
@@ -87,11 +89,12 @@ export const Right = styled.div`
 
 export const SwapButton = styled.button`
   font-weight: 800;
-  font-size: 25px;
+  font-size: 20px;
   color: #8B949E;
   opacity: 75%;
   color: ${(p: Props) => p.isActive ? 'white' : ''};
   opacity: ${(p: Props) => p.isActive ? '100%' : ''};
+  font-size: ${(p: Props) => p.isActive ? '25px' : ''};
   transition: all .3s ease-in-out;
 
   &:hover {
@@ -106,12 +109,12 @@ export const Content = styled.div`
     height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 
     div:nth-child(1) {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
+      height: 250px;
       width: 100%;
     }
     
@@ -119,7 +122,7 @@ export const Content = styled.div`
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin-top: 30px;
+      margin-top: 10px;
 
       button:nth-child(1) {
         background-color: rgba(48, 54, 61, 0.4);

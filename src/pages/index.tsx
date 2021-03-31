@@ -52,7 +52,8 @@ export default function Home() {
             </div>
           </div>
           <Content>
-            <form>
+            {login ? 
+              <form>
               <div>
                 <Input type="text" placeholder="Username" />
                 <Input type="password" placeholder="Password" />
@@ -66,6 +67,22 @@ export default function Home() {
                 </button>
               </div>
             </form>
+            :
+            <form>
+              <div>
+                <Input type="text" placeholder="Username" />
+                <Input type="password" placeholder="Password" />
+                <Input type="email" placeholder="Email" />
+                <Input type="tel" placeholder="Cell" />
+              </div>
+              <div>
+                <button>
+                  Sign Up
+                </button>
+              </div>
+            </form>
+            }
+            
           </Content>
         </Right>
       </Box>
