@@ -122,14 +122,28 @@ export const Content = styled.div`
       margin-top: 30px;
 
       button:nth-child(1) {
-        background-color: #30363D;
+        background-color: rgba(48, 54, 61, 0.4);
         font-size: 20px;
         padding: 7px;
         border-radius: 20px;
         width: 100px;
+        transition: all .2s ease-in-out;
+
+        &:hover{
+          background-color: #30363D;
+          border-radius: 10px;
+        }
       }
 
       button:nth-child(2) {
+        color: #8B949E;
+        font-size: 16px;
+        transition: all .2s ease-in-out;
+        
+        &:hover {
+          color: #FFF;
+          
+        }
       }
     }
 
